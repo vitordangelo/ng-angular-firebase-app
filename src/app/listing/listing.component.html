@@ -1,0 +1,19 @@
+<div class="row content">
+  <div class="col s4">
+    <img width="100%" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+  </div>
+  <div class="col s4">
+    <ul class="collection">
+      <li class="collection-item"><strong>Owner: </strong>{{listing.owner}}</li>
+      <li class="collection-item"><strong>Bedrooms: </strong>{{listing.bedrooms}}</li>
+      <li class="collection-item"><strong>Type: </strong>{{listing.type}}</li>
+      <li class="collection-item"><strong>Price: </strong>{{listing.price}}</li>
+    </ul>
+    <a class="waves-effect waves-light btn blue darken-1"><i class="material-icons center">mode_edit</i></a>
+    <a class="waves-effect waves-light btn red darken-1"><i class="material-icons center">delete</i></a>
+
+  </div>
+</div>
+
+<a [routerLink]="['/listings']" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      

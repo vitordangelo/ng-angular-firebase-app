@@ -1,0 +1,11 @@
+<nav>
+  <div class="nav-wrapper blue-grey darken-4">
+    <a [routerLink]="['/']" class="brand-logo"><img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png" alt=""></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li *ngIf="(af.auth | async)" routerLinkActive="active"><a [routerLink]="['/listings']">Listings</a></li>
+      <li *ngIf="(af.auth | async)" routerLinkActive="active"><a [routerLink]="['/add-listings']">Add Listing</a></li>
+      <li *ngIf="!(af.auth | async)"><a (click)="login()">Login</a></li>
+      <li *ngIf="(af.auth | async)"><a (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+</nav>
